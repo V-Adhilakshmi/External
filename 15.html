@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>welcome to document object</title>
+</head>
+<body>
+<p id="demo".</p>
+<script>
+const x=document.getElementsByTagName("li")
+document.getElementById("demo").innerHTML=x[0].innerHTML
+/*document.writeln(document.title)
+document.writeln(document.lastModified)*/
+
+function myFun(){
+const x=document.getElementsByName("animal")
+for(let i=0;i<x.length;i++){
+if(x[i].type=="checkbox")
+{
+x[i].checked=true
+}
+}
+}
+</script>
+cat:<input type="checkbox" name="animal" value="cat">
+Monkey:<input type="checkbox" name="animal" value="Monkey">
+car:<input type="checkbox" name="vehicle" value="car">
+parrot:<input type="checkbox" name="bird" value="parrot">
+Apple:<input type="checkbox" name="fruit" value="Apple"><br><br>
+<input type="button" value="click" onclick="myFun()">
+<ul>
+<li>Tea</li>
+<li>Coffee</li>
+<li>Milk</li>
+</ul>
+</body>
+</html>
